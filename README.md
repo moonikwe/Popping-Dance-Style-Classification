@@ -22,15 +22,31 @@ see requirements.py
 ffmpeg <https://www.ffmpeg.org/>
 VideoPad <http://www.nchsoftware.com/videopad/index.html>
 
-## How to Install
-
 ## How to Use
+Download the dataset in the `data` folder. Download the data from <https://drive.google.com/open?id=170nlQKM58cw_h-GKBa6YoxzHJLFNnS_i>
+
+Still in the `data` folder, `14PDSC.rar`
+
+Create folders with `mkdir train && mkdir test && mkdir sequences && mkdir checkpoints`
+
+Now, move videos to appropriate folders and extract frames:
+
+`python 1_move_files.py`
+
+`python 2_extract_files.py`
+
+Go to the main folder. Extract feature with `extract_features.py`
+
+To train run `train.py`. The model is defined at `models.py`
+
+To see progress while training, run `tensorboard --logdir=data/logs`
+
+To validate, run `validate_rnn.py`
 
 ## Results
+The model resulted to a 93% accuracy and 26% loss.
 
 ## References
-
-## License
 
 
 
