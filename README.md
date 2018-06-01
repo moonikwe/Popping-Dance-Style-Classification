@@ -7,7 +7,7 @@ See this link for the full details of the said blog https://medium.com/@harvitro
 
 The whole methodology for method #4 (as adopted in this project) is seen in the same link. Refer to this for his github repository Popping-Dance-Style-Classification
 
-##Requirements
+## Requirements
 
 Keras>=2.0.2
 numpy>=1.12.1
@@ -22,15 +22,15 @@ see requirements.py
 ffmpeg <https://www.ffmpeg.org/>
 VideoPad <http://www.nchsoftware.com/videopad/index.html>
 
-##How to Install
+## How to Install
 
-##How to Use
+## How to Use
 
-##Results
+## Results
 
-##References
+## References
 
-##License
+## License
 
 
 
