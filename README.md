@@ -23,9 +23,13 @@ ffmpeg <https://www.ffmpeg.org/>
 VideoPad <http://www.nchsoftware.com/videopad/index.html>
 
 ## How to Use
-Download the dataset in the `data` folder. Download the data from <https://drive.google.com/open?id=170nlQKM58cw_h-GKBa6YoxzHJLFNnS_i>
+This code requires you have Keras 2 and TensorFlow 1 or greater installed. Please see the requirements.txt file. To ensure you're up to date, run:
 
-Still in the `data` folder, `14PDSC.rar`
+`pip install -r requirements.txt`
+
+Download the dataset in the `data` folder. Download the data from <https://drive.google.com/open?id=170nlQKM58cw_h-GKBa6YoxzHJLFNnS_i> and copy it to `data` folder
+
+Still in the `data` folder, `unrar e 14PDSC.rar`
 
 Create folders with `mkdir train && mkdir test && mkdir sequences && mkdir checkpoints`
 
