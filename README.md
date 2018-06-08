@@ -23,12 +23,14 @@ ffmpeg <https://www.ffmpeg.org/>
 VideoPad <http://www.nchsoftware.com/videopad/index.html>
 
 ## How to Use
-This code requires you have Keras 2 and TensorFlow 1 or greater installed. Please see the requirements.txt file. To ensure you're up to date, run:
+This code requires Keras 2 and TensorFlow 1 or greater installed. Please see the requirements.txt file. To ensure you're up to date, run:
 
 `pip install -r requirements.txt`
 
+### Get the dataset
 Download the dataset in the `data` folder. Download the data from <https://drive.google.com/open?id=170nlQKM58cw_h-GKBa6YoxzHJLFNnS_i> and copy it to `data` folder
 
+### Working with the data
 Still in the `data` folder, `unrar e 14PDSC.rar`
 
 Create folders with `mkdir train && mkdir test && mkdir sequences && mkdir checkpoints`
@@ -39,12 +41,15 @@ Now, move videos to appropriate folders and extract frames:
 
 `python 2_extract_files.py`
 
+### Extracting features
 Go to the main folder. Extract feature with `extract_features.py`
 
+### Train
 To train run `train.py`. The model is defined at `models.py`
 
 To see progress while training, run `tensorboard --logdir=data/logs`
 
+### Validate
 To validate, run `validate_rnn.py`
 
 ## Results
